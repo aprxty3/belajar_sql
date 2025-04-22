@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d509c71-6428-4c58-b6e4-88feee157e27" name="Changes" comment="primary key">
+    <list default="true" id="2d509c71-6428-4c58-b6e4-88feee157e27" name="Changes" comment="clause">
+      <change afterPath="$PROJECT_DIR$/admin.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/barang.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9f655a7-2f01-44b3-a18c-5dc21769db47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a9f655a7-2f01-44b3-a18c-5dc21769db47.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -45,21 +48,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/dwiajiprasetyo&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/dwiajiprasetyo",
+    "settings.editor.selected.configurable": "vcs.Git"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2d509c71-6428-4c58-b6e4-88feee157e27" name="Changes" comment="" />
@@ -74,6 +78,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="insert data" />
     <MESSAGE value="primary key" />
-    <option name="LAST_COMMIT_MESSAGE" value="primary key" />
+    <MESSAGE value="clause" />
+    <option name="LAST_COMMIT_MESSAGE" value="clause" />
   </component>
 </project>
