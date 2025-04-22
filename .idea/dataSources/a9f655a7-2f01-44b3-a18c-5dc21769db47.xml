@@ -1077,33 +1077,37 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Position>2</Position>
       <StoredType>varchar(100)|0s</StoredType>
     </column>
-    <column id="306" parent="298" name="description">
+    <column id="306" parent="298" name="category">
       <Position>3</Position>
+      <StoredType>enum(&apos;Makanan&apos;, &apos;Minuman&apos;, &apos;Lainnya&apos;)|0e</StoredType>
+    </column>
+    <column id="307" parent="298" name="description">
+      <Position>4</Position>
       <StoredType>text|0s</StoredType>
     </column>
-    <column id="307" parent="298" name="price">
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StoredType>int unsigned|0s</StoredType>
-    </column>
-    <column id="308" parent="298" name="quantity">
-      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    <column id="308" parent="298" name="price">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>int unsigned|0s</StoredType>
     </column>
-    <column id="309" parent="298" name="created_at">
-      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    <column id="309" parent="298" name="quantity">
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>6</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="310" parent="298" name="created_at">
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
       <StoredType>timestamp|0s</StoredType>
     </column>
-    <index id="310" parent="298" name="PRIMARY">
+    <index id="311" parent="298" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="311" parent="298" name="PRIMARY">
+    <key id="312" parent="298" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d509c71-6428-4c58-b6e4-88feee157e27" name="Changes" comment="insert data" />
+    <list default="true" id="2d509c71-6428-4c58-b6e4-88feee157e27" name="Changes" comment="primary key">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9f655a7-2f01-44b3-a18c-5dc21769db47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a9f655a7-2f01-44b3-a18c-5dc21769db47.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +73,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="insert data" />
-    <option name="LAST_COMMIT_MESSAGE" value="insert data" />
+    <MESSAGE value="primary key" />
+    <option name="LAST_COMMIT_MESSAGE" value="primary key" />
   </component>
 </project>
