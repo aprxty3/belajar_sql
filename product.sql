@@ -120,3 +120,60 @@ select power(10, 2)        as kuadrat,
 
 select *
 from products;
+
+insert into products (id, name, category, description, price)
+values ('P007', 'Jasjus', 'Minuman', 'Jasjus dengan rasa jeruk nipis', 10000),
+       ('P008', 'Lasegar', 'Minuman', 'Lasegar dengan rasa jeruk nipis', 10000),
+       ('P009', 'Bengbeng', 'Lainnya', 'Bengbeng dengan rasa coklat', 2000),
+       ('P010', 'Coklat', 'Lainnya', 'Coklat dengan rasa coklat', 2000);
+
+select id, lower(name) as lower, upper(name) as upper, length(name) as lenght, trim(name) as trim
+from products;
+
+select id, created_at, YEAR(created_at) as year, MONTH(created_at) as month, DAY(created_at) as day
+from products;
+
+select id,
+       category,
+       case category
+           when 'Makanan' then 'Enak'
+           when 'Minuman' then 'Seger'
+           else 'hmmm'
+           end as 'Categoryy'
+from products;
+
+select id, price, if(price > 15000, 'Mahal', 'Murah') as harga
+from products
+order by price desc;
+
+select id,
+       name,
+       ifnull(category, 'Tolong di Isi') as 'Null Category',
+       if(quantity = 0, 'Kosong', 'Ada') as 'Stok'
+from products;
+
+select count(id)     as total_barang,
+       sum(quantity) as total_stok,
+       avg(price)    as rata_rata_harga,
+       min(price)    as harga_terendah,
+       max(price)    as harga_tertinggi
+from products;
+
+select category,
+       count(id)     as total_barang,
+       sum(quantity) as total_stok,
+       avg(price)    as rata_rata_harga,
+       min(price)    as harga_terendah,
+       max(price)    as harga_tertinggi
+from products
+group by category;
+
+select category,
+       count(id)     as total_barang,
+       sum(quantity) as total_stok,
+       avg(price)    as rata_rata_harga,
+       min(price)    as harga_terendah,
+       max(price)    as harga_tertinggi
+from products
+group by category
+having total_barang > 1;
