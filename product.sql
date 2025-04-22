@@ -177,3 +177,14 @@ select category,
 from products
 group by category
 having total_barang > 1;
+
+alter table products
+    add constraint price_check check ( price >= 1000 );
+
+show create table products;
+
+insert into products (id, name, category, price, quantity)
+values ('P011', 'Mie Lidi', 'Lainnya', 1000, 10);
+
+select *
+from products;
