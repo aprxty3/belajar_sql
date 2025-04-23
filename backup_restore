@@ -1,0 +1,5 @@
+// Backup
+mysqldump -u root -p --databases belajar_sql > backup.sql
+
+// Restore
+mysql -u root -p < backup.sql

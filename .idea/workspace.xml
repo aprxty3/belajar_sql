@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d509c71-6428-4c58-b6e4-88feee157e27" name="Changes" comment="locking system">
-      <change afterPath="$PROJECT_DIR$/user_management.sql" afterDir="false" />
+    <list default="true" id="2d509c71-6428-4c58-b6e4-88feee157e27" name="Changes" comment="backup">
+      <change afterPath="$PROJECT_DIR$/backup_restore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5dda7744-1b45-4cf4-9a71-2d5a55e43ca6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5dda7744-1b45-4cf4-9a71-2d5a55e43ca6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9f655a7-2f01-44b3-a18c-5dc21769db47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a9f655a7-2f01-44b3-a18c-5dc21769db47.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,6 +97,7 @@
     <MESSAGE value="set operator" />
     <MESSAGE value="transaction" />
     <MESSAGE value="locking system" />
-    <option name="LAST_COMMIT_MESSAGE" value="locking system" />
+    <MESSAGE value="backup" />
+    <option name="LAST_COMMIT_MESSAGE" value="backup" />
   </component>
 </project>

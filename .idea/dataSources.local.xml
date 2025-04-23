@@ -15,12 +15,13 @@
           <node kind="schema">
             <name qname="@" />
             <name qname="belajar_sql" />
+            <name qname="belajar_import" />
           </node>
         </introspection-scope>
       </schema-mapping>
       <load-sources>user_and_system_sources</load-sources>
     </data-source>
-    <data-source name="@localhost2" uuid="5dda7744-1b45-4cf4-9a71-2d5a55e43ca6">
+    <data-source name="@localhost [2]" uuid="3c430128-6f17-4b52-905e-3479b12a8fab">
       <database-info product="MySQL" version="8.0.30" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-j-8.2.0 (Revision: 06a1f724497fd81c6a659131fda822c9e5085b6c)" dbms="MYSQL" exact-version="8.0.30" exact-driver-version="8.2">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
@@ -28,30 +29,12 @@
       </database-info>
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
-      <user-name>aji</user-name>
+      <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
           <node kind="schema">
             <name qname="@" />
-            <name qname="belajar_sql" />
-          </node>
-        </introspection-scope>
-      </schema-mapping>
-      <load-sources>user_and_system_sources</load-sources>
-    </data-source>
-    <data-source name="@localhost3" uuid="ad9d7ff3-cf08-429f-9a63-d25a96a66cc4">
-      <database-info product="MySQL" version="8.0.30" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-j-8.2.0 (Revision: 06a1f724497fd81c6a659131fda822c9e5085b6c)" dbms="MYSQL" exact-version="8.0.30" exact-driver-version="8.2">
-        <extra-name-characters>#@</extra-name-characters>
-        <identifier-quote-string>`</identifier-quote-string>
-        <jdbc-catalog-is-schema>true</jdbc-catalog-is-schema>
-      </database-info>
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <user-name>prasetyo</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="schema">
-            <name qname="@" />
-            <name qname="belajar_sql" />
+            <name qname="belajar_import" />
           </node>
         </introspection-scope>
       </schema-mapping>
