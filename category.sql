@@ -40,3 +40,22 @@ where id in ('P007', 'P008', 'P010', 'P011');
 select products.id, products.name, categories.name
 from products
          join categories on (products.category_id = categories.id);
+
+insert into categories (id, name)
+VALUES ('C004', 'Oleh-oleh'),
+       ('C005', 'Bingkisan');
+
+select *
+from categories;
+
+select *
+from categories
+         inner join products on (products.category_id = categories.id);
+
+select *
+from categories
+         left join products on (products.category_id = categories.id);
+
+select *
+from categories
+         right join products on (products.category_id = categories.id);

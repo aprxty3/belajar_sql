@@ -205,3 +205,10 @@ where match(name, description) against('+ayam -bakso' in boolean mode);
 select *
 from products
 where match(name, description) against('bakso' with query expansion);
+
+insert into products(id, name, price, quantity)
+values ('X001', 'X Satu', 12000, 20),
+       ('X002', 'X Dua', 12000, 50),
+       ('X003', 'X Tiga', 20000, 30);
+
+select * from products;
