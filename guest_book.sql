@@ -46,3 +46,21 @@ select distinct email
 from guest_book
 where email in (select email
                 from customer);
+
+start transaction;
+
+insert into guest_book (email, title, content)
+values ('contoh1@gmail.com', 'contoh', 'cuma contoh'),
+       ('contoh2@gmail.com', 'contoh', 'cuma contoh'),
+       ('contoh3@gmail.com', 'contoh', 'cuma contoh'),
+       ('contoh4@gmail.com', 'contoh', 'cuma contoh');
+
+select *
+from guest_book;
+
+commit;
+
+delete
+from guest_book;
+
+rollback;
