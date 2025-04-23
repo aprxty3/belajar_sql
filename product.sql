@@ -188,3 +188,20 @@ values ('P011', 'Mie Lidi', 'Lainnya', 1000, 10);
 
 select *
 from products;
+
+show create table products;
+
+alter table products
+    add fulltext full_search (name, description);
+
+select *
+from products
+where match(name, description) against('ayam' in natural language mode);
+
+select *
+from products
+where match(name, description) against('+ayam -bakso' in boolean mode);
+
+select *
+from products
+where match(name, description) against('bakso' with query expansion);

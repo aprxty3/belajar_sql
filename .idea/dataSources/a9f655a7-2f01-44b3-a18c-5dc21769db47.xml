@@ -1191,60 +1191,65 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="329" parent="300" name="PRIMARY">
+    <index id="329" parent="300" name="full_search">
+      <ColNames>name
+description</ColNames>
+      <Type>fulltext</Type>
+    </index>
+    <key id="330" parent="300" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="330" parent="301" name="id">
+    <column id="331" parent="301" name="id">
       <AutoIncrement>1</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="331" parent="301" name="email">
+    <column id="332" parent="301" name="email">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(100)|0s</StoredType>
     </column>
-    <column id="332" parent="301" name="first_name">
+    <column id="333" parent="301" name="first_name">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>varchar(100)|0s</StoredType>
     </column>
-    <column id="333" parent="301" name="last_name">
+    <column id="334" parent="301" name="last_name">
       <Position>4</Position>
       <StoredType>varchar(100)|0s</StoredType>
     </column>
-    <index id="334" parent="301" name="PRIMARY">
+    <index id="335" parent="301" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="335" parent="301" name="email_unique">
+    <index id="336" parent="301" name="email_unique">
       <ColNames>email</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="336" parent="301" name="idx_first_last_name">
+    <index id="337" parent="301" name="idx_first_last_name">
       <ColNames>first_name
 last_name</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="337" parent="301" name="idx_first_name">
+    <index id="338" parent="301" name="idx_first_name">
       <ColNames>first_name</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="338" parent="301" name="idx_last_name">
+    <index id="339" parent="301" name="idx_last_name">
       <ColNames>last_name</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="339" parent="301" name="PRIMARY">
+    <key id="340" parent="301" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="340" parent="301" name="email_unique">
+    <key id="341" parent="301" name="email_unique">
       <UnderlyingIndexName>email_unique</UnderlyingIndexName>
     </key>
   </database-model>
