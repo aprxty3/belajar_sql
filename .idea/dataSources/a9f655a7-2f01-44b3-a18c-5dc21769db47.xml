@@ -1272,23 +1272,36 @@ last_name</ColNames>
       <Position>3</Position>
       <StoredType>text|0s</StoredType>
     </column>
-    <foreign-key id="346" parent="302" name="fk_wishlist_product">
+    <column id="346" parent="302" name="id_customer">
+      <Position>4</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <foreign-key id="347" parent="302" name="fk_wishlist_product">
       <ColNames>id_product</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
       <RefColNames>id</RefColNames>
       <RefTableName>products</RefTableName>
     </foreign-key>
-    <index id="347" parent="302" name="PRIMARY">
+    <foreign-key id="348" parent="302" name="fk_wishlist_customer">
+      <ColNames>id_customer</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>customer</RefTableName>
+    </foreign-key>
+    <index id="349" parent="302" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="348" parent="302" name="fk_wishlist_product">
+    <index id="350" parent="302" name="fk_wishlist_product">
       <ColNames>id_product</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="349" parent="302" name="PRIMARY">
+    <index id="351" parent="302" name="fk_wishlist_customer">
+      <ColNames>id_customer</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="352" parent="302" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
